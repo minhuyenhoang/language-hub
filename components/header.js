@@ -5,7 +5,7 @@ export default function Header({ openLogin, openSignup }) {
 	const { user } = useContext(AuthContext);
 	return (
 		<nav className='flex justify-between p-5 pr-5w-screen'>
-			<div>LanguageHub</div>
+			<div>Lingo</div>
 			{user !== null ? (
 				<img
 					alt=''

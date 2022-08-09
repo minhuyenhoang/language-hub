@@ -1,7 +1,15 @@
 import StoryCard from './storyCard';
 
+const seed = [
+	{
+		_id: '0',
+		story: 'First Story',
+		reactions: ['😆', '❤️'],
+	},
+];
+
 export default function StoriesBoard({ stories }) {
-	let list = stories.map((el) => {
+	let list = seed.map((el) => {
 		let reaction = [];
 		el.reactions.forEach((element) => {
 			reaction.push(element.reaction);
